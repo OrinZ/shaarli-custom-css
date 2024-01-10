@@ -1,6 +1,6 @@
 # Shaarli Custom CSS Plugin
 
-[Shaarli](https://github.com/shaarli/Shaarli) plugin to customize the look and feel of the UI with custom CSS rules. 
+[Shaarli](https://github.com/shaarli/Shaarli) plugin to customize the look and feel of the UI with custom CSS rules. This is a very simple fork that alters the file which stores the user's styles from data/custom_css.css to data/user.css. Please note this if you already use this file, as extensive compatibility testing has not been performed!
 
 Tested on Shaarli 0.12.0-beta with the default theme but it should work with the [Shaarli-Material](https://github.com/kalvn/Shaarli-Material) and all [built-in themes](https://github.com/shaarli/Shaarli/tree/master/tpl/) as well.
 

@@ -30,7 +30,7 @@ use Shaarli\Config\ConfigManager;
  */
 function hook_custom_css_render_includes($data, $conf)
 {
-    $customCss = $conf->get('resource.data_dir') . '/custom_css.css';
+    $customCss = $conf->get('resource.data_dir') . '/user.css';
 
     if (file_exists($customCss)) {
         $data['css_files'][] = $customCss;
@@ -57,7 +57,7 @@ function hook_custom_css_save_plugin_parameters($data, $conf)
         $customCss = $data['CUSTOM_CSS'];
     }
 
-    file_put_contents($conf->get('resource.data_dir') . '/custom_css.css', $customCss);
+    file_put_contents($conf->get('resource.data_dir') . '/user.css', $customCss);
 
     return $data;
 }
